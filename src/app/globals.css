@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: linear-gradient(to top left, #3ca55c, #b5ac49);
+
+    --background: 147 30.549999999999997% 3.52%;
+    --foreground: 147 4.699999999999999% 97.2%;
+
+    --muted: 147 23.5% 13.2%;
+    --muted-foreground: 147 4.699999999999999% 54.4%;
+
+    --popover: 147 55.6% 5.72%;
+    --popover-foreground: 147 4.699999999999999% 97.2%;
+
+    --card: 147 55.6% 5.72%;
+    --card-foreground: 147 4.699999999999999% 97.2%;
+
+    --border: 147 23.5% 13.2%;
+    --input: 147 23.5% 13.2%;
+
+    --primary: 147 47% 44%;
+    --primary-foreground: 147 4.699999999999999% 97.2%;
+
+    --secondary: 147 23.5% 13.2%;
+    --secondary-foreground: 147 4.699999999999999% 97.2%;
+
+    --accent: 147 23.5% 13.2%;
+    --accent-foreground: 147 4.699999999999999% 97.2%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 147 4.699999999999999% 97.2%;
+
+    --ring: 147 47% 44%;
   }
 }
