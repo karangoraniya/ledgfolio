@@ -1,14 +1,12 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { createPublicClient, createWalletClient, http, custom } from "viem";
 import { mainnet } from "viem/chains";
 import { addEnsContracts } from "@ensdomains/ensjs";
-// import { getPrice } from "@ensdomains/ensjs/public";
-// import { randomSecret } from "@ensdomains/ensjs/utils";
-// import { commitName, registerName } from "@ensdomains/ensjs/wallet";
+import { getPrice } from "@ensdomains/ensjs/public";
+import { randomSecret } from "@ensdomains/ensjs/utils";
+import { commitName, registerName } from "@ensdomains/ensjs/wallet";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -20,7 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Loader2 } from "lucide-react";
-// import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useLedger } from "@/components/LedgerContext";
 import { useENSResolver } from "@/app/hooks/useENS";
 
