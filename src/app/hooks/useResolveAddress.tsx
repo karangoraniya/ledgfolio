@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from "react";
 import { useEnsAddress } from "wagmi";
 import { normalize } from "viem/ens";
@@ -16,7 +18,7 @@ export function useResolveAddress(input: string, selectedChain: string) {
 
   const isEns = input.toLowerCase().endsWith(".eth");
 
-  const { data: ensAddress, isError: _isEnsError } = useEnsAddress({
+  const { data: ensAddress, isError: isEnsError } = useEnsAddress({
     name: isEns ? normalize(input) : undefined,
     coinType:
       selectedChain === "ethereum"
