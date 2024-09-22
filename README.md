@@ -4,6 +4,10 @@
 
 LedgeFolio is a comprehensive web application that integrates Ledger hardware wallets with various Web3 functionalities, including NFT management, cross-chain token bridging, ENS (Ethereum Name Service) domain operations, and cryptocurrency purchases.
 
+## Chart
+
+![Chart](https://silver-autonomous-silverfish-492.mypinata.cloud/ipfs/QmPDQ8T4hFVJdarLfCFkae7hvJddpPttKM8AjZtrDwjfiB)
+
 ## Detailed Description
 
 LedgeFolio is designed to provide a seamless interface between Ledger hardware wallets and the Web3 ecosystem. It offers the following key features:
